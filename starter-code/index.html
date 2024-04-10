@@ -24,19 +24,25 @@
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/home.css" />
 
+    <script defer src="./assets/scripts/script.js"></script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
+  <body class="pb-24">
     <header class="header">
-      <nav class="nav nav_menu flex justify-between align-center py-8 px-4">
+      <nav
+        class="nav nav_menu flex justify-between items-center max-md:py-4 lg:py-8 px-4"
+      >
         <figure class="logo">
           <img src="./assets/shared/logo.svg" alt="Logo" />
         </figure>
-        <ul class="list_menu flex w-[60%] justify-center align-center gap-8 h-20	rounded-l-lg relative left-4 backdrop-blur-lg">
+        <ul
+          class="hidden sm:flex list_menu w-[60%] justify-center items-center gap-4 h-20 rounded-l-lg relative left-4 backdrop-blur-lg pr-4 sm:max-lg:bg-[#18222C]"
+        >
           <li class="list_item">
             <a
               href=""
-              class="list_item barlow-condensed-thin text-white  uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
             >
               <span class="barlow-condensed-bold px-1">00</span> Home
             </a>
@@ -45,7 +51,7 @@
             <a href="" class="list_item">
               <a
                 href=""
-                class="list_item barlow-condensed-thin text-white  uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+                class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
               >
                 <span class="barlow-condensed-bold px-1">01</span> Destination
               </a>
@@ -53,39 +59,91 @@
           </li>
           <li class="list_item">
             <a
-                href=""
-                class="list_item barlow-condensed-thin text-white  uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
-              >
-                <span class="barlow-condensed-bold px-1">02</span> Crew
-              </a>
+              href=""
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+            >
+              <span class="barlow-condensed-bold px-1">02</span> Crew
+            </a>
           </li>
           <li class="list_item">
             <a
+              href=""
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+            >
+              <span class="barlow-condensed-bold px-1">03</span> Technology
+            </a>
+          </li>
+        </ul>
+
+        <div class="sm:hidden relative">
+          <div class="sandwich_icon">
+            <span></span>
+          </div>
+          <ul
+            class="list_menu_mobile hidden rounded-l-lg backdrop-blur-lg absolute -right-4 top-11 pt-4 pb-4 pl-4 w-40 bg-[#18222C]"
+          >
+            <li class="list_item">
+              <a
                 href=""
-                class="list_item barlow-condensed-thin text-white  uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">00</span> Home
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">01</span> Destination
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">02</span> Crew
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
               >
                 <span class="barlow-condensed-bold px-1">03</span> Technology
               </a>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main class="main main_home">
-      <h1 class="title">
-        So, you want to travel to
-        <span class="title_letter_bigger"> Space </span>
-      </h1>
-      <h2 class="subtitle">
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </h2>
+    <main class="main main_home text-center lg:text-left mt-12 px-4 lg:flex">
+      <div class="container_texts max-w-[375px] mx-auto">
+        <h1
+          class="title barlow-condensed-thin uppercase text-[#abafd0] text-2xl tracking-[.08rem]"
+        >
+          So, you want to travel to
+          <span
+            class="title_letter_bigger bellefair-regular text-white text-8xl block my-4"
+          >
+            Space
+          </span>
+        </h1>
+        <h2 class="subtitle text-[#abafd0] barlow-regular">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </h2>
+      </div>
 
-      <button class="btn_explore">
-        <a href="#">Explore</a>
-      </button>
+      <a
+        href="#"
+        class="btn_explore bellefair-regular bg-white mt-12 inline-block w-48 h-48 flex items-center justify-center mx-auto rounded-full text-4xl"
+        >Explore</a
+      >
     </main>
   </body>
 </html>
