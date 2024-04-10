@@ -1,4 +1,20 @@
-body{
-    background: url(../home/background-home-desktop.jpg) no-repeat;
+body {
+  background: url(../home/background-home-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url(../home/background-home-tablet.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+    body {
+        background: url(../home/background-home-desktop.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
 }
