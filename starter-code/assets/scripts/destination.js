@@ -1,4 +1,4 @@
-$('.container_carousel_planet .owl-carousel').owlCarousel({
+$('.container_carousel .owl-carousel').owlCarousel({
     loop:false,
     margin:10,
     nav:false,
@@ -9,7 +9,7 @@ $('.container_carousel_planet .owl-carousel').owlCarousel({
 function namePlanetInOwlNav() {
     const planets = ['Moon', 'Mars', 'Europe', 'Titan'];
 
-    let owlNav = document.querySelectorAll('.container_carousel_planet .owl-dot');
+    let owlNav = document.querySelectorAll('.container_carousel .owl-dot');
 
     console.log(owlNav);
 
