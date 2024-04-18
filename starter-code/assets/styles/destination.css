@@ -1,0 +1,58 @@
+body {
+  background: url(../destination/background-destination-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url(../destination/background-destination-tablet.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background: url(../destination/background-destination-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.texts_planet {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container_carousel .owl-dots {
+  color: white !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: 0;
+  text-align: left;
+}
+.container_carousel .owl-dot {
+  font-size: 22px !important;
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-weight: 100;
+  transition: 0.2s;
+}
+.container_carousel .owl-dot:hover,
+.container_carousel .owl-dot.active {
+  border-bottom: 2px solid #fff;
+}
+.container_planet {
+  margin: auto;
+}
+.img_planet, .desc  {
+  max-width: 500px;
+}
+@media (min-width: 992px) {
+  .container_carousel .owl-dots {
+    width: 50%;
+    max-width: 500px;
+  }
+}
