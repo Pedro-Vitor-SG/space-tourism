@@ -58,3 +58,9 @@
   position: relative;
   top: 8px;
 }
+.container_carousel {
+  max-width: 1248px;
+}
+.container_carousel .item {
+  max-width: 1248px;
+}
