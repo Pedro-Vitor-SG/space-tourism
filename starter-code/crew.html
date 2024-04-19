@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LIBS -->
+    <link
+      rel="stylesheet"
+      href="./assets/libs/owlcarousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/owlcarousel/owl.theme.default.min.css"
+    />
+    <!-- LIBS -->
+
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/crew.css" />
+
+    <script defer src="./assets/scripts/script.js"></script>
+    <script defer src="./assets/scripts/crew.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="pb-24">
+    <header class="header">
+      <nav
+        class="nav nav_menu flex justify-between items-center max-md:py-4 lg:py-8 px-4"
+      >
+        <figure class="logo">
+          <img src="./assets/shared/logo.svg" alt="Logo" />
+        </figure>
+        <ul
+          class="hidden sm:flex list_menu w-[60%] justify-center items-center gap-4 h-20 rounded-l-lg relative left-4 backdrop-blur-lg pr-4 sm:max-lg:bg-[#18222C] bg-[#1c2431]"
+        >
+          <li class="list_item">
+            <a
+              href="/"
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+            >
+              <span class="barlow-condensed-bold px-1">00</span> Home
+            </a>
+          </li>
+          <li class="list_item">
+            <a href="" class="list_item">
+              <a
+                href="/destination-moon.html"
+                class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+              >
+                <span class="barlow-condensed-bold px-1">01</span> Destination
+              </a>
+            </a>
+          </li>
+          <li class="list_item">
+            <a
+              href=""
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+            >
+              <span class="barlow-condensed-bold px-1">02</span> Crew
+            </a>
+          </li>
+          <li class="list_item">
+            <a
+              href=""
+              class="list_item barlow-condensed-thin text-white uppercase inline-block h-full leading-[80px] hover:border-b-4 transition-all"
+            >
+              <span class="barlow-condensed-bold px-1">03</span> Technology
+            </a>
+          </li>
+        </ul>
+
+        <div class="sm:hidden relative">
+          <div class="sandwich_icon">
+            <span></span>
+          </div>
+          <ul
+            class="list_menu_mobile hidden rounded-l-lg backdrop-blur-lg absolute -right-4 top-11 pt-4 pb-4 pl-4 w-40 bg-[#18222C]"
+          >
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">00</span> Home
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">01</span> Destination
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">02</span> Crew
+              </a>
+            </li>
+            <li class="list_item">
+              <a
+                href=""
+                class="list_item barlow-condensed-thin text-white uppercase transition-all w-full block py-2 hover:border-b-2"
+              >
+                <span class="barlow-condensed-bold px-1">03</span> Technology
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main main_destination container mx-auto mt-12 px-4">
+      <p
+        class="pick-text barlow-condensed-regular uppercase text-white text-2xl tracking-[.2rem]"
+      >
+        <span class="mr-2 text-[#343642]">02</span> Meet your crew
+      </p>
+
+      <section class="description_planet mt-8 lg:mt-24">
+        <div class="container_carousel container_carousel_crew">
+          <div class="owl-carousel owl-theme">
+            <div
+              class="item flex w-[92vw] flex-col lg:justify-between lg:flex-row gap-12"
+            >
+              <div class="texts_carousel pt-20">
+                <h1
+                  class="title_letter_bigger bellefair-regular text-white text-3xl lg:text-7xl mb-4 uppercase"
+                >
+                  <span
+                    class="small text-2xl lg:text-3xl block text-[#61656d] mb-3 lg:mb-5"
+                  >
+                    Flight Engineer
+                  </span>
+                  Anousheh Ansari
+                </h1>
+                <p class="desc text-white">
+                  Anousheh Ansari is an Iranian American engineer and co-founder
+                  of Prodea Systems. Ansari was the fourth self-funded space
+                  tourist, the first self-funded woman to fly to the ISS, and
+                  the first Iranian in space.
+                </p>
+              </div>
+              <div class="container_planet">
+                <figure class="img_planet">
+                  <img
+                    src="./assets/crew/image-anousheh-ansari.png"
+                    alt="Imagem Lua"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <div
+              class="item flex w-[92vw] flex-col lg:justify-between lg:flex-row gap-12"
+            >
+              <div class="texts_carousel pt-20">
+                <h1
+                  class="title_letter_bigger bellefair-regular text-white text-3xl lg:text-7xl mb-4 uppercase"
+                >
+                  <span
+                    class="small text-2xl lg:text-3xl block text-[#61656d] mb-3 lg:mb-5"
+                  >
+                    Mission Specialist
+                  </span>
+                  Mark Shuttleworth
+                </h1>
+                <p class="desc text-white">
+                  Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                  the company behind the Linux-based Ubuntu operating system.
+                  Shuttleworth became the first South African to travel to space
+                  as a space tourist.
+                </p>
+              </div>
+              <div class="container_planet">
+                <figure class="img_planet">
+                  <img
+                    src="./assets/crew/image-mark-shuttleworth.png"
+                    alt="Imagem Lua"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <div
+              class="item flex w-[92vw] flex-col lg:justify-between lg:flex-row gap-12"
+            >
+              <div class="texts_carousel pt-20">
+                <h1
+                  class="title_letter_bigger bellefair-regular text-white text-3xl lg:text-7xl mb-4 uppercase"
+                >
+                  <span
+                    class="small text-2xl lg:text-3xl block text-[#61656d] mb-3 lg:mb-5"
+                  >
+                    Pilot
+                  </span>
+                  Victor Glover
+                </h1>
+                <p class="desc text-white">
+                  Pilot on the first operational flight of the SpaceX Crew
+                  Dragon to the International Space Station. Glover is a
+                  commander in the U.S. Navy where he pilots an F/A-18.He was a
+                  crew member of Expedition 64, and served as a station systems
+                  flight engineer.
+                </p>
+              </div>
+              <div class="container_planet">
+                <figure class="img_planet">
+                  <img
+                    src="./assets/crew/image-victor-glover.png"
+                    alt="Imagem Lua"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <div
+              class="item flex w-[92vw] flex-col lg:justify-between lg:flex-row gap-12"
+            >
+              <div class="texts_carousel pt-20">
+                <h1
+                  class="title_letter_bigger bellefair-regular text-white text-3xl lg:text-7xl mb-4 uppercase"
+                >
+                  <span
+                    class="small text-2xl lg:text-3xl block text-[#61656d] mb-3 lg:mb-5"
+                  >
+                    Commander
+                  </span>
+                  Douglas Hurley
+                </h1>
+                <p class="desc text-white">
+                  Douglas Gerald Hurley is an American engineer, former Marine
+                  Corps pilot and former NASA astronaut. He launched into space
+                  for the third time as commander of Crew Dragon Demo-2.
+                </p>
+              </div>
+              <div class="container_planet">
+                <figure class="img_planet">
+                  <img
+                    src="./assets/crew/image-douglas-hurley.png"
+                    alt="Imagem Lua"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- LIBS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/libs/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- LIBS -->
+  </body>
+</html>
