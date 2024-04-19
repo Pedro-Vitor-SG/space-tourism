@@ -64,3 +64,9 @@
 .container_carousel .item {
   max-width: 1248px;
 }
+
+.texts_carousel{
+  font-size: 20px;
+  line-height: 30px;
+  
+}
